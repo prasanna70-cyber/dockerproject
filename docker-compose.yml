@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   internetbanking:
-    image: prasannapothula/ib-image:latest
+    image: prasannapothula/internetbanking-image:latest
     ports:
       - "81:80"
     deploy:
@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/lib/internetbanking
   mobilebanking:
-    image: prasannapothula/mb-image:latest
+    image: prasannapothula/mobilebanking-image:latest
     ports:
       - "82:80"
     deploy:
